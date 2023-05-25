@@ -1,0 +1,68 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.formContainer {
+  padding: 1rem;
+  border-radius: 2px;
+  width: 600px;
+  /* overflow: hidden; */
+}
+
+.formContainer h1 {
+  margin-bottom: 0.5rem;
+}
+
+@keyframes growMessage {
+  0% {
+    font-size: 0;
+    padding: 0;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+.errorMessage {
+  background-color: rgb(244, 89, 89);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  animation: 0.5s ease-in-out growMessage;
+  display: block;
+  white-space: nowrap;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.formContainer form input {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.formContainer form button {
+  border: none;
+  background-color: white;
+  color: #242424;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 20%;
+  margin-top: 2rem;
+  border-radius: 1px;
+  padding: 0.5rem;
+  cursor: pointer;
+}

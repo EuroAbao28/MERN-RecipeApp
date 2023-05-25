@@ -1,0 +1,118 @@
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.createRecipeContainer {
+  animation: 0.65s inAnimation ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  padding: 1rem;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+@keyframes growMessage {
+  0% {
+    font-size: 0;
+    padding: 0;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+.errorMsg {
+  background-color: rgb(244, 89, 89);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  animation: 0.5s ease-in-out growMessage;
+  display: block;
+  white-space: nowrap;
+}
+
+.successMsg {
+  background-color: rgb(79, 214, 119);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  animation: 0.5s ease-in-out growMessage;
+  display: block;
+  white-space: nowrap;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 1rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left .action {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.left .action button {
+  padding: 0.5rem 1rem;
+}
+
+.right .addIng {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  gap: 0.5rem;
+}
+
+.right .IngList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.right .IngList li {
+  animation: 0.25s inAnimation ease-in-out;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 50%;
+}

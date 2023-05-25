@@ -1,0 +1,52 @@
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fullRecipeContainer {
+  animation: 0.65s inAnimation ease-in-out;
+  margin: auto;
+  width: 80%;
+}
+
+.fullRecipeContainer p,
+.fullRecipeContainer li {
+  opacity: 0.5;
+}
+
+.backButton {
+  filter: invert(1);
+  width: 40px;
+  cursor: pointer;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  margin-top: 1rem;
+}
+
+.left button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.left img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.right {
+  padding-left: 4rem;
+}
+
+.right h3 {
+  margin-bottom: 1rem;
+}

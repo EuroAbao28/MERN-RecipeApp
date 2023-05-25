@@ -1,0 +1,28 @@
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homeContainer {
+  padding: 2rem;
+  animation: 0.65s inAnimation ease-in-out;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.msg {
+  opacity: 0.2;
+  display: grid;
+  place-content: center;
+  height: 80vh;
+}

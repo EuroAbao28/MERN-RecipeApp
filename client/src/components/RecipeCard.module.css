@@ -1,0 +1,70 @@
+.cardContainer {
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header p {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header img {
+  width: 30px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+@keyframes inHeart {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header .savedRecipe {
+  animation: 0.25s inHeart ease-in-out;
+}
+
+.heartOutline {
+  filter: invert(1);
+}
+
+.cardContainer:hover .imgContainer img {
+  transform: scale(1.1);
+}
+
+.imgContainer {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer img {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.15s ease-in-out;
+}
+
+.cookingTime {
+  margin-top: -5px;
+  margin-bottom: 0.5rem;
+  color: white;
+  opacity: 0.5;
+  font-weight: 300;
+}
